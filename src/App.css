@@ -1,5 +1,6 @@
 .App {
-  text-align: left;
+  text-align: center;
+  font-family: "arial", sans-serif;
 }
 
 .App-logo {
@@ -32,7 +33,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "arial", sans-serif;
 }
 body {
   background: #182a46;

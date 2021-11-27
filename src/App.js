@@ -1,16 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Note from './Note.js';
 
 const currentYear = new Date().getFullYear();
-
-function Note() {
-  return (
-    <div className="note">
-      <h1>This is the note title</h1>
-      <p>This is the note content</p>
-    </div>
-  );
-}
 
 function App() {
   return (
