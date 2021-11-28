@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Note from './Note.js';
+import Card from './Card.js';
+import contacts from './Contact.js';
+
 
 const currentYear = new Date().getFullYear();
 
@@ -12,7 +14,25 @@ function App() {
         <h1 className="App-header">Tasker</h1>
       </header>
 <div>
-  <div><Note /></div>
+  <h1 className="heading">Contacts</h1>
+  <Card 
+    name={contacts[0].name}
+    img={contacts[0].img}
+    mobile={contacts[0].mobile}
+    email={contacts[0].email}
+    />
+  <Card 
+    name={contacts[1].name}
+    img={contacts[1].img}
+    mobile={contacts[1].mobile}
+    email={contacts[1].email}
+    />
+  <Card 
+    name={contacts[2].name}
+    img={contacts[2].img}
+    mobile={contacts[2].mobile}
+    email={contacts[2].email}
+    />
 </div>
       <footer>
         <p>Created By Khushnood Asif</p>
