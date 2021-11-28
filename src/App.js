@@ -2,9 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './Card.js';
 import contacts from './Contact.js';
-import Avatar from './Avatar.js';
 
 const currentYear = new Date().getFullYear();
+
+function createCard(contacts){
+  return <Card
+  key={contacts.id}
+  name={contacts.name}
+  img={contacts.img}
+  mobile={contacts.mobile}
+  email={contacts.email} />
+}
 
 function App() {
   return (
@@ -15,25 +23,8 @@ function App() {
       </header>
 <div>
   <h1 className="heading">Contacts</h1>
-  <Avatar img="https://avatars.githubusercontent.com/u/72355837?s=400&u=ae2e310cb75dcec7cb78329fbe5672262eed57cc&v=4"/>
-  <Card 
-    name={contacts[0].name}
-    img={contacts[0].img}
-    mobile={contacts[0].mobile}
-    email={contacts[0].email}
-    />
-  <Card 
-    name={contacts[1].name}
-    img={contacts[1].img}
-    mobile={contacts[1].mobile}
-    email={contacts[1].email}
-    />
-  <Card 
-    name={contacts[2].name}
-    img={contacts[2].img}
-    mobile={contacts[2].mobile}
-    email={contacts[2].email}
-    />
+  {contacts.map(createCard)}
+
 </div>
       <footer>
         <p>Created By Khushnood Asif</p>
