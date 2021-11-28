@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './Card.js';
 import contacts from './Contact.js';
-
+import Avatar from './Avatar.js';
 
 const currentYear = new Date().getFullYear();
 
@@ -15,6 +15,7 @@ function App() {
       </header>
 <div>
   <h1 className="heading">Contacts</h1>
+  <Avatar img="https://avatars.githubusercontent.com/u/72355837?s=400&u=ae2e310cb75dcec7cb78329fbe5672262eed57cc&v=4"/>
   <Card 
     name={contacts[0].name}
     img={contacts[0].img}
