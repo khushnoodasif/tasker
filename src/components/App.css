@@ -91,6 +91,8 @@ footer p {
   float: right;
   margin-right: 10px;
   color: #35f1da;
+  border: none;
+  background: none;
 }
 
 form {
