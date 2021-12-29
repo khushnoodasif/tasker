@@ -1,6 +1,5 @@
 import React from "react";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import DeleteIcon from "@material-ui/icons/Delete";
 
 function Note(props) {
   function handleClick() {
@@ -8,13 +7,11 @@ function Note(props) {
   }
 
   return (
-   <MuiThemeProvider>
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={handleClick}><DeleteForeverIcon/></button>
+      <button onClick={handleClick}><DeleteIcon/></button>
     </div>
-   </MuiThemeProvider>
   );
 }
 
